@@ -11,5 +11,5 @@ then
   echo "Pass any value for path and queue"
 else
   # Find queue by parameter
-  /opt/zimbra/common/sbin/postqueue -p | find $path/$queue/ -type f | wc -l
+  find $path/$queue/ -type f | wc -l
 fi
